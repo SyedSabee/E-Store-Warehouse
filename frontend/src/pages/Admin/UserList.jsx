@@ -58,7 +58,7 @@ const UserList = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 ml-12">
       <h1 className="text-2xl font-semibold mb-4">Users</h1>
       {isLoading ? (
         <Loader />
@@ -94,8 +94,7 @@ const UserList = () => {
                         />
                         <button
                           onClick={() => updateHandler(user._id)}
-                          className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg"
-                        >
+                          className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg">
                           <FaCheck />
                         </button>
                       </div>
@@ -105,8 +104,7 @@ const UserList = () => {
                         <button
                           onClick={() =>
                             toggleEdit(user._id, user.username, user.email)
-                          }
-                        >
+                          }>
                           <FaEdit className="ml-[1rem]" />
                         </button>
                       </div>
@@ -123,8 +121,7 @@ const UserList = () => {
                         />
                         <button
                           onClick={() => updateHandler(user._id)}
-                          className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg"
-                        >
+                          className="ml-2 bg-blue-500 text-white py-2 px-4 rounded-lg">
                           <FaCheck />
                         </button>
                       </div>
@@ -134,8 +131,7 @@ const UserList = () => {
                         <button
                           onClick={() =>
                             toggleEdit(user._id, user.name, user.email)
-                          }
-                        >
+                          }>
                           <FaEdit className="ml-[1rem]" />
                         </button>
                       </div>
@@ -153,8 +149,7 @@ const UserList = () => {
                       <div className="flex">
                         <button
                           onClick={() => deleteHandler(user._id)}
-                          className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                        >
+                          className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                           <FaTrash />
                         </button>
                       </div>

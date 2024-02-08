@@ -15,8 +15,7 @@ const AdminMenu = () => {
         className={`${
           isMenuOpen ? "top-2 right-2" : "top-5 right-7"
         } bg-[#151515] p-2 fixed rounded-lg`}
-        onClick={toggleMenu}
-      >
+        onClick={toggleMenu}>
         {isMenuOpen ? (
           <FaTimes color="white" />
         ) : (
@@ -37,8 +36,7 @@ const AdminMenu = () => {
                 to="/admin/dashboard"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "white",
-                })}
-              >
+                })}>
                 Admin Dashboard
               </NavLink>
             </li>
@@ -48,8 +46,7 @@ const AdminMenu = () => {
                 to="/admin/categorylist"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "white",
-                })}
-              >
+                })}>
                 Create Category
               </NavLink>
             </li>
@@ -59,9 +56,8 @@ const AdminMenu = () => {
                 to="/admin/productlist"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "white",
-                })}
-              >
-                Create Product
+                })}>
+                Add Website Store
               </NavLink>
             </li>
             <li>
@@ -70,9 +66,8 @@ const AdminMenu = () => {
                 to="/admin/allproductslist"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "white",
-                })}
-              >
-                All Products
+                })}>
+                All Websites
               </NavLink>
             </li>
             <li>
@@ -81,8 +76,7 @@ const AdminMenu = () => {
                 to="/admin/userlist"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "white",
-                })}
-              >
+                })}>
                 Manage Users
               </NavLink>
             </li>
@@ -92,8 +86,7 @@ const AdminMenu = () => {
                 to="/admin/orderlist"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "white",
-                })}
-              >
+                })}>
                 Manage Orders
               </NavLink>
             </li>

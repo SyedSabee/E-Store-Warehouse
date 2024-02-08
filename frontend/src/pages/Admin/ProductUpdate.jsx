@@ -112,7 +112,7 @@ const AdminProductUpdate = () => {
   const handleDelete = async () => {
     try {
       let answer = window.confirm(
-        "Are you sure you want to delete this product?"
+        "Are you sure you want to delete this Website?"
       );
       if (!answer) return;
 
@@ -137,7 +137,7 @@ const AdminProductUpdate = () => {
         <div className="flex flex-col md:flex-row">
           <AdminMenu />
           <div className="md:w-3/4 p-3">
-            <div className="h-12">Update / Delete Product</div>
+            <div className="h-12">Update / Delete Website</div>
 
             {image && (
               <div className="text-center">
@@ -233,8 +233,7 @@ const AdminProductUpdate = () => {
                   <select
                     placeholder="Choose Category"
                     className="p-4 mb-3 w-[30rem] border rounded-lg bg-[#101011] text-white mr-[5rem]"
-                    onChange={(e) => setCategory(e.target.value)}
-                  >
+                    onChange={(e) => setCategory(e.target.value)}>
                     {categories?.map((c) => (
                       <option key={c._id} value={c._id}>
                         {c.name}
@@ -247,14 +246,12 @@ const AdminProductUpdate = () => {
               <div className="">
                 <button
                   onClick={handleSubmit}
-                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-green-600 mr-6"
-                >
+                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-green-600 mr-6">
                   Update
                 </button>
                 <button
                   onClick={handleDelete}
-                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-pink-600"
-                >
+                  className="py-4 px-10 mt-5 rounded-lg text-lg font-bold  bg-pink-600">
                   Delete
                 </button>
               </div>

@@ -34,25 +34,22 @@ const ProductTabs = ({
           className={`flex-1 p-4 cursor-pointer text-lg ${
             activeTab === 1 ? "font-bold" : ""
           }`}
-          onClick={() => handleTabClick(1)}
-        >
+          onClick={() => handleTabClick(1)}>
           Write Your Review
         </div>
         <div
           className={`flex-1 p-4 cursor-pointer text-lg ${
             activeTab === 2 ? "font-bold" : ""
           }`}
-          onClick={() => handleTabClick(2)}
-        >
+          onClick={() => handleTabClick(2)}>
           All Reviews
         </div>
         <div
           className={`flex-1 p-4 cursor-pointer text-lg ${
             activeTab === 3 ? "font-bold" : ""
           }`}
-          onClick={() => handleTabClick(3)}
-        >
-          Related Products
+          onClick={() => handleTabClick(3)}>
+          Related Websites
         </div>
       </section>
 
@@ -72,8 +69,7 @@ const ProductTabs = ({
                     required
                     value={rating}
                     onChange={(e) => setRating(e.target.value)}
-                    className="p-2 border rounded-lg xl:w-[40rem] text-black"
-                  >
+                    className="p-2 border rounded-lg xl:w-[40rem] text-black">
                     <option value="">Select</option>
                     <option value="1">Inferior</option>
                     <option value="2">Decent</option>
@@ -94,14 +90,12 @@ const ProductTabs = ({
                     required
                     value={comment}
                     onChange={(e) => setComment(e.target.value)}
-                    className="p-2 border rounded-lg xl:w-[40rem] text-black"
-                  ></textarea>
+                    className="p-2 border rounded-lg xl:w-[40rem] text-black"></textarea>
                 </div>
                 <button
                   type="submit"
                   disabled={loadingProductReview}
-                  className="bg-pink-600 text-white py-2 px-4 rounded-lg"
-                >
+                  className="bg-pink-600 text-white py-2 px-4 rounded-lg">
                   Submit
                 </button>
               </form>
@@ -123,8 +117,7 @@ const ProductTabs = ({
               {product.reviews.map((review) => (
                 <div
                   key={review._id}
-                  className="bg-[#1A1A1A] p-4 rounded-lg xl:ml-[2rem] sm:ml-[0rem] xl:w-[50rem] sm:w-[24rem] mb-5"
-                >
+                  className="bg-[#1A1A1A] p-4 rounded-lg xl:ml-[2rem] sm:ml-[0rem] xl:w-[50rem] sm:w-[24rem] mb-5">
                   <div className="flex justify-between">
                     <strong className="text-[#B0B0B0]">{review.name}</strong>
                     <p className="text-[#B0B0B0]">

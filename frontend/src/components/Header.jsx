@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <div className="flex justify-around">
         <div className="xl:block lg:hidden md:hidden:sm:hidden">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1">
             {data.map((product) => (
               <div key={product._id}>
                 <SmallProduct product={product} />

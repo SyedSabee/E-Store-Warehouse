@@ -56,8 +56,7 @@ const Register = () => {
           <div className="my-[2rem]">
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-white"
-            >
+              className="block text-sm font-medium text-white">
               Name
             </label>
             <input
@@ -73,8 +72,7 @@ const Register = () => {
           <div className="my-[2rem]">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-white"
-            >
+              className="block text-sm font-medium text-white">
               Email Address
             </label>
             <input
@@ -90,8 +88,7 @@ const Register = () => {
           <div className="my-[2rem]">
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-white"
-            >
+              className="block text-sm font-medium text-white">
               Password
             </label>
             <input
@@ -107,8 +104,7 @@ const Register = () => {
           <div className="my-[2rem]">
             <label
               htmlFor="confirmPassword"
-              className="block text-sm font-medium text-white"
-            >
+              className="block text-sm font-medium text-white">
               Confirm Password
             </label>
             <input
@@ -124,8 +120,7 @@ const Register = () => {
           <button
             disabled={isLoading}
             type="submit"
-            className="bg-pink-500 text-white px-4 py-2 rounded cursor-pointer my-[1rem]"
-          >
+            className="bg-pink-500 text-white px-4 py-2 rounded cursor-pointer my-[1rem]">
             {isLoading ? "Registering..." : "Register"}
           </button>
 
@@ -137,8 +132,7 @@ const Register = () => {
             Already have an account?{" "}
             <Link
               to={redirect ? `/login?redirect=${redirect}` : "/login"}
-              className="text-pink-500 hover:underline"
-            >
+              className="text-pink-500 hover:underline">
               Login
             </Link>
           </p>
@@ -147,7 +141,7 @@ const Register = () => {
       <img
         src="https://images.unsplash.com/photo-1576502200916-3808e07386a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80"
         alt=""
-        className="h-[65rem] w-[59%] xl:block md:hidden sm:hidden rounded-lg"
+        className="h-[40rem] w-[29%] xl:block md:hidden sm:hidden rounded-lg my-2"
       />
     </section>
   );

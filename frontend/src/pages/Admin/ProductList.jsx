@@ -71,7 +71,7 @@ const ProductList = () => {
       <div className="flex flex-col md:flex-row">
         <AdminMenu />
         <div className="md:w-3/4 p-3">
-          <div className="h-12">Create Product</div>
+          <div className="h-12">Add Website</div>
 
           {imageUrl && (
             <div className="text-center">
@@ -146,8 +146,7 @@ const ProductList = () => {
               type="text"
               className="p-2 mb-3 bg-[#101011] border rounded-lg w-[95%] text-white"
               value={description}
-              onChange={(e) => setDescription(e.target.value)}
-            ></textarea>
+              onChange={(e) => setDescription(e.target.value)}></textarea>
 
             <div className="flex justify-between">
               <div>
@@ -165,8 +164,7 @@ const ProductList = () => {
                 <select
                   placeholder="Choose Category"
                   className="p-4 mb-3 w-[30rem] border rounded-lg bg-[#101011] text-white"
-                  onChange={(e) => setCategory(e.target.value)}
-                >
+                  onChange={(e) => setCategory(e.target.value)}>
                   {categories?.map((c) => (
                     <option key={c._id} value={c._id}>
                       {c.name}
@@ -178,8 +176,7 @@ const ProductList = () => {
 
             <button
               onClick={handleSubmit}
-              className="py-4 px-10 mt-5 rounded-lg text-lg font-bold bg-pink-600"
-            >
+              className="py-4 px-10 mt-5 rounded-lg text-lg font-bold bg-pink-600">
               Submit
             </button>
           </div>

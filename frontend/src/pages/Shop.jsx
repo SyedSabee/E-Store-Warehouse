@@ -82,7 +82,7 @@ const Shop = () => {
 
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-12">
         <div className="flex md:flex-row">
           <div className="bg-[#151515] p-3 mt-2 mb-2">
             <h2 className="h4 text-center py-2 bg-black rounded-full mb-2">
@@ -102,8 +102,7 @@ const Shop = () => {
 
                     <label
                       htmlFor="pink-checkbox"
-                      className="ml-2 text-sm font-medium text-white dark:text-gray-300"
-                    >
+                      className="ml-2 text-sm font-medium text-white dark:text-gray-300">
                       {c.name}
                     </label>
                   </div>
@@ -129,8 +128,7 @@ const Shop = () => {
 
                     <label
                       htmlFor="pink-radio"
-                      className="ml-2 text-sm font-medium text-white dark:text-gray-300"
-                    >
+                      className="ml-2 text-sm font-medium text-white dark:text-gray-300">
                       {brand}
                     </label>
                   </div>
@@ -155,15 +153,14 @@ const Shop = () => {
             <div className="p-5 pt-0">
               <button
                 className="w-full border my-4"
-                onClick={() => window.location.reload()}
-              >
+                onClick={() => window.location.reload()}>
                 Reset
               </button>
             </div>
           </div>
 
           <div className="p-3">
-            <h2 className="h4 text-center mb-2">{products?.length} Products</h2>
+            <h2 className="h4 text-center mb-2">{products?.length} Websites</h2>
             <div className="flex flex-wrap">
               {products.length === 0 ? (
                 <Loader />
