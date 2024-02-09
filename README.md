@@ -17,7 +17,7 @@ To install and run the application locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/online-store.git
+   git clone https://github.com/SyedSabee/E-Store-Warehouse
 2. Navigate to the project directory:
    ```bash
    cd online-store
