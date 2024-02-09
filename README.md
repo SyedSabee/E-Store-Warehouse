@@ -1,7 +1,7 @@
 # E Store Warehouse
 
 ## Description
-
+ 
 This project is an online store application built with React for the frontend and Node.js with Express for the backend. It allows users to browse, search, and purchase products, manage their shopping cart, and interact with the store's features.
 
 ## Table of Contents
