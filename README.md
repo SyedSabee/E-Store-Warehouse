@@ -7,9 +7,9 @@ This project is an online store application built with React for the frontend an
 ## Table of Contents
 
   1. [Installation](#Installation)
-  2. [Usage](Usage)
-  3. [API Endpoints](API-Endpoints)
-  4. [Project Video](Project-Video)
+  2. [Usage](#Usage)
+  3. [API Endpoints](#API-Endpoints)
+  4. [Project Video](#Project-Video)
 
 ## Installation
 
